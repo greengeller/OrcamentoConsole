@@ -27,9 +27,10 @@ namespace OrcamentoConsumer
                     Console.WriteLine($"Segue seu Orcamento: " +
                         $"ID do Orcamento: {orcamento.Id} {Environment.NewLine}" +
                         $"Nome do Produto: {orcamento.Produtos.Nome} {Environment.NewLine}" +
-                        $"Valor do Produto: {orcamento.Produtos.Valor} {Environment.NewLine}" +
+                        $"Valor do Produto: R${orcamento.Produtos.Valor} {Environment.NewLine}" +
                         $"Quantidade: {orcamento.Quantidade} {Environment.NewLine}" +
-                        $"Valor Total: {orcamento.ValorTotal}");
+                        $"Valor Total: R${orcamento.ValorTotal}{Environment.NewLine}" +
+                        $"Nome do Vendedor: {orcamento.Vendedor.Nome}");
                 }
         }
         public async Task<Produtos> GetProdutosAsync()
